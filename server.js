@@ -7,7 +7,7 @@ const PORT = process.env.PORT || 8080;
 
 app.use(express.json());
 
-// Debug log for every request
+// Debug  log for every request
 app.use((req, res, next) => {
   console.log(`[${new Date().toISOString()}] ${req.method} ${req.url}`);
   next();
