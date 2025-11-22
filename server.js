@@ -2,7 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const tasksRouter = require('./routes/tasks');
 const app = express();
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 8080;
 
 app.use(express.json());
 app.use('/tasks', tasksRouter);
